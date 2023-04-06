@@ -12,13 +12,32 @@ namespace ConsoleApp64CampusHTMLfromCode
         Console.WriteLine("Using an HTML Example.\nplease drag and drop a file or use\nright click -> SendTo");
         //use default file path if one is missing
         text = $@"
-static void Main(string[] args)
+using System;
+namespace ConsoleApp64
 {{
-  for (int i = 0; i < 10; i++)
+  public class Program
   {{
-    Console.WriteLine($""i is {{i}}"");
+    static void Main(string[] args)
+    {{
+      Console.WriteLine(""Hello, World!"");
+      int[] arr = {{ 1, 3, 5 }};
+      foreach (var item in arr)
+        Console.WriteLine(item);
+    }}
   }}
-  Console.WriteLine(""Done!"");
+  class MyClass
+  {{
+    public MyClass()
+    {{
+      while (false)
+      {{
+      }}
+    }}
+    public bool Test(int x)
+    {{
+      return true;
+    }}
+  }}
 }}";
         args= new string[] { @"C:\temp\test.cs"};
       }
